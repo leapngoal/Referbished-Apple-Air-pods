@@ -1,0 +1,219 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Darker+Grotesque:wght@300&family=Kumbh+Sans:wght@100&family=Maven+Pro&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100&family=Nanum+Myeongjo&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Quicksand:wght@300&family=Red+Hat+Display:wght@300&display=swap');
+
+/* CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p,
+span{
+    color: black;
+}
+
+h1,h2,h3,
+h4,h5,h6{
+    color: black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+button{
+    border: none;
+    outline: none;
+}
+
+/* MAIN */
+.main{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 6rem 3rem;
+}
+
+/* HEADER & NAVBAR */
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav--logo{
+    color: black;
+    font-size: 1.4rem;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400;
+}
+
+.nav--logo .bxl-apple{
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.nav--toggle{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav--toggle .bx-chevron-down{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.nav--btn{
+    padding: .4rem 1rem;
+    border-radius: 4rem;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.nav--btn .cta{
+    color: white;
+    font-family: "Darker Grotesque", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* HOME */
+.home{
+    background-image: url('airpods-4.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home_container{
+    display: grid;
+    justify-content: center;
+}
+
+.home_content{
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.home-title{
+    font-family: "Kumbh Sans", sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.home-text{
+    font-family: "Kumbh Sans", sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.sub-text{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.pp-GVLYMEHKGP2NW{
+    width: 90px;
+    height: 40px;
+    border-radius: 4rem;
+    cursor: pointer;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 900;
+}
+
+/* MEDIA QUIERIES */
+ /* For Small Devices */
+ @media screen and (max-width: 340px){
+    .container{
+        margin-inline: 2rem;
+    }
+ }
+ /* For Medium Devices */
+ @media screen and (min-width: 576px){
+    .container{
+        margin-inline: 2rem;
+    }
+ }
+ /* For Large Devices */
+ @media screen and (min-width: 768px){
+    .container{
+        margin-inline: 2rem;
+    }
+ }
+
+ /* For Larger Devices */
+ @media screen and (min-width: 1150px){
+    .container{
+        margin-inline: auto;
+    }
+
+    .section{
+        padding: 7rem 2rem;
+    }
+
+    .home-title{
+        font-size: 1.6rem;
+    }
+    .home-text{
+        font-size: 5rem;
+    }
+
+    .sub-text{
+        font-size: 1.3rem;
+    }
+
+    .pp-GVLYMEHKGP2NW{
+        width: 160px;
+        height: 50px;
+    }
+ }
